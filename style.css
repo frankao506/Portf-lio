@@ -1,0 +1,577 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #000;
+  height: 100vh;
+
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 25px;
+
+}
+
+
+
+
+
+/* aqui a estilização do cabeçalho */
+header {
+  padding: 40px 4%;
+
+}
+
+header>.interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color:#3b3a3a;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+
+}
+
+header a:hover{
+  color: #fff;
+  transform: scale(1.05);
+}
+
+
+
+
+header nav.menu-desktop a:hover {
+  color: #00ff08;
+  transform: scale(1.08);
+  transition: .2s;
+
+}
+
+
+.meu-nome,
+meu-nome {
+  font-size: 25px;
+
+}
+
+
+
+.cor-dois,
+meu-nome {
+  color: #00ff08;
+}
+
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+
+
+/* A partir daqui o estilo do hamburguer moblile*/
+.btn-abrir-menu i{
+color: #00ff08;
+font-size: 40px;
+}
+
+
+
+.menu-mobile{
+  background-color: #000;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  width: 0%;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+  width: 70%;
+}
+
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+  display: block;
+  
+}
+
+
+
+.menu-mobile .btn-fechar{
+  padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar  i{
+color: #00ff08;
+font-size: 30px;
+}
+
+
+
+
+.menu-mobile nav ul{
+  text-align: right;
+}
+
+.menu-mobile nav ul li  a{
+color: #fff;
+font-size: 20px;
+font-weight: 300;
+padding: 20px 8%;
+display: block;
+}
+
+.menu-mobile nav ul li  a:hover{
+  background-color: #00ff08;
+  color: #000;
+}
+
+.overlay-menu{
+  background-color: #000000e0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 88888;
+  display: none;
+}
+
+button {
+  padding: 10px 25px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 25px;
+  background-color: #00ff08;
+  border: 0;
+  cursor: pointer;
+}
+
+
+h2.title {
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
+}
+
+h2.title span {
+  color: #00ff08;
+}
+
+
+button:hover {
+  color: blue;
+}
+
+
+
+
+/* Estilo do topo do site */
+
+section .topo-do-site {
+  padding: 40px 4%;
+}
+
+section .topo-do-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+
+.topo-do-site h1 {
+  color: #fff;
+  font-size: 38px;
+  margin: 40px 0;
+
+}
+
+.topo-do-site h1 span {
+  color: #00ff08;
+}
+
+p {
+  color: #fff;
+}
+
+.btn-novo {
+  margin-top: 25px;
+  padding: 10px 25px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 25px;
+  background-color: #00ff08;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-novo:hover {
+  color: blue;
+  transform: scale(1.08);
+  transition: .2s;
+}
+
+
+.butao {
+  font-size: 18px;
+}
+
+
+.nova-foto {
+  display: flex;
+  margin-left: 270px;
+  border-radius: 45%;
+  height: 290px;
+  width: 260px;
+  background-color: #00ff08;
+}
+
+
+
+.flex {
+  display: flex;
+  margin-left: 10px;
+}
+
+
+
+.nova-foto {
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+  margin-left: 35px;
+
+
+}
+
+
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: 30px;
+  }
+}
+
+/*Estilo das espeicialidades*/
+section.especialidades {
+  padding: 40px 4%;
+
+}
+
+section.especialidades .flex {
+  gap: 60px;
+}
+
+
+
+.especialidades-box {
+  color: #fff;
+  padding: 40px;
+  margin-top: 55px;
+  border-radius: 25px;
+  transition: 1.s;
+  text-align: justify;
+
+}
+
+.especialidades-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffffff41;
+}
+
+
+
+
+
+.especialidades-box i {
+  font-size: 48px;
+  color: #00ff08;
+
+}
+
+.especialidades-box h3 {
+  font-size: 25px;
+  margin: 15px 0;
+}
+
+/* EStilo do sobre */
+
+section.sobre {
+  padding: 80px 4%;
+
+}
+
+section.sobre .flex {
+  align-items: center;
+  gap: 60px;
+}
+
+.sobre .txt-sobre {
+  color: #fff;
+
+}
+
+.sobre .txt-sobre h2 {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
+
+}
+
+.sobre .txt-sobre h2 span {
+  color: #00ff08;
+  display: block;
+  margin-top: 12px;
+}
+
+.sobre .txt-sobre p {
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.NOVO {
+  border-radius: 78px;
+  height: 305px;
+
+
+}
+
+ .nova-foto{
+  clip-path: polygon(45% 0%, 83% 10%, 100% 45%, 95% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+
+}
+
+
+
+
+.sobre .txt-sobre .btn-social button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 0;
+  background-color: #00ff08;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 15px;
+  margin: 0 5px;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+  color: blue;
+  transform: scale(1.08);
+  transition: .2s;
+}
+
+/* ESTILO DO PORTFÓLIO */
+section.portfolio {
+  padding: 80px 4%;
+  box-shadow: 0px 0px 40px 10px #ffffff21;
+}
+
+section.portfolio .flex {
+  justify-content: space-around;
+  margin-top: 60px;
+  gap: 25px;
+}
+
+
+
+
+.img-port {
+  width: 480px;
+  height: 300px;
+  background-size: cover;
+  background-position: 20% 0%;
+  transition: 7s;
+  cursor: pointer;
+  border-radius: 40px;
+  position: relative;
+
+
+}
+
+.img-port:hover {
+  background-position: 100% 100%;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00ff081c;
+  border-radius: 40px;
+  display: flex;
+
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #00ff08;
+  opacity: 0;
+  transition: 7s;
+
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+/* Aqui começa toda a sessão do formulário */
+
+section.formulário {
+  padding: 80px 4%;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  background-color: #5f5f5f85;
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 18px;
+}
+
+form textarea {
+  resize: none;
+  height: 150px;
+}
+
+form .btn-enviar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+form .btn-enviar input {
+  width: 120px;
+  background-color: #00ff08;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 2s;
+}
+
+/* Rodapé */
+
+footer {
+  padding: 40px 4%;
+  box-shadow: 0px 0px 40px 10px #ffffff21;
+
+}
+
+
+.line-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+footer p {
+  color: #00ff08;
+  font-size: 22px;
+
+  
+}
+
+.meu-nome {
+  color: #fff;
+}
+
+.e-mail {
+  color: #fff;
+  font-size: 12px;
+}
+
+.line-footer {
+  padding: 20px 0px;
+  
+}
+
+.border {
+  border: 2px solid #00ff08;
+}
+
+
+
+@media screen and (max-width: 1015px) {
+  /* classes gerais */
+
+  .flex {
+    flex-direction: column-reverse;
+  }
+
+
+  /* cabeçalho */
+  .desktop,
+  .btn-contato {
+    display: none;
+    
+  }
+  
+  .btn-social{
+    text-align: center;
+  }
+
+
+
+  .img-port {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: 20% 0%;
+    transition: 7s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    
+
+}
+
+.NOVO {
+  border-radius: 15px;
+  height: 325px;
+
+}
+
+.line-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+}
+}
